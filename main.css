@@ -456,3 +456,75 @@ span.num {
         margin-top: 2%;
     }
 }
+@media (max-width: 414px) {
+    body {
+        width: 414px;
+    }
+    .header__section {
+        
+        grid-template-columns: 1fr ;
+        
+    }
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .calc {
+        display: block;
+        padding: 15px 0px 20px 0px;
+    }
+    .form-right {
+        padding: 20px 30px 0px 30px;
+    }
+    .form button {
+        margin: 15px 0px 0px 0px ;
+    }
+    .form__submit {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer-top {
+        font-size: 12px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 5px;
+    }
+    .footer__nav ul {
+        padding: 0;
+        justify-content: space-around;
+    }
+    .header__item {
+        margin: 5px 10px;
+    }
+    .header__section {
+        padding: 5px;
+        white-space: wrap;
+        justify-items: end;
+    }
+    .form__submit button {
+        width: 180px;
+    }
+    .footer-bottom {
+        flex-direction: column-reverse;
+        margin: 0px 0px 10px 0px;
+    }
+    .footer__links {
+        margin: 10px;
+
+    }
+    .footer__container{
+        align-items: center;
+    }
+    .container {
+        width: 400px;
+        padding: 10px ;
+        
+    }
+    .item {
+        font-size: 10px;
+        padding: 2px;
+        text-transform: none;
+    }
+}
