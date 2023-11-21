@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>agent-54.ru</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <header>
+        <div class="header__section">
+            <div class="header__logo">
+                <img class="logo__image" src='img/logo.png'>
+                <div class="header__item">
+                    <h4>Честно. Быстро. Выгодно</h4>
+                </div>
+            </div>
+            <!-- <div class="header__item">
+                <h4>Честно. Быстро. Выгодно</h4>
+            </div> -->
+            <div class="header__item header__search">
+                <input type="text" placeholder="Поиск по сайту" id="search">
+            </div>
+            <div class="header__item">
+                <div>
+                    <img class="location" src="img/location-arrow-svgrepo-com.svg">
+                    <select id="city">Ваш город
+                        <option value="Екатеринбург">Екатеринбург</option>
+                        <option value="Пермь">Пермь</option>
+                        <option value="Москва">Москва</option>
+                        <option value="other">Другой</option>
+                    </select>
+                </div>
+                <div class="header__item">
+                    <select id="tel">
+                    <option>+7 (963) 501-00-11</a></option>
+                    </select>
+                </div>
+                
+            </div>
+            <!-- <div class="header__item">
+                <select id="tel">
+                <option>+7 (963) 501-00-11</a></option>
+                </select>
+            </div> -->
+            <div class="header__item">
+                <button>Отправить заявку
+                </button>
+            </div>  
+            
+        </div>
+        <hr align="center" width="100%" size="1" color="#DCDCDC"/>
+
+        <nav class="navbar">
+            <a href="#">Обо мне</a>
+            <a href="#">Услуги</a>
+            <a href="#">Преимущества</a>
+            <a href="#">Контакты</a>
+            <a href="#">Пресс-центр</a>
+            <a href="#">Видео</a>
+            <a href="#">Фото-галерея</a>
+            <a href="#">Для клиентов</a>
+        </nav>
+        <hr align="center" width="100%" size="1" color="#DCDCDC"/>
+    </header>
+    <section class="form">
+        <div class="form__container">
+            <h1>Ипотечный калькулятор</h1>
+            <h3>Недвижимость</h3>
+            <div class="calc">
+                <form>
+                    <div class="form__group">
+                        <label for="price">Стоимость невижимости</label>
+                        <div class="inputBackground">
+                            <input class="number" type="number" value="3000000" min="0" max="10000000" placeholder="Введите стоимость" id="price">
+                            <img class="ruble" src="img/ruble.svg">
+                        </div>
+                        <input class="range" type="range" value="25" min="0" max="100">
+                    </div>
+                    <div class="form__group">
+                        <label for="payment">Первоначальный взнос</label>
+                        <div class="inputBackground">
+                            <input class="number" type="number" value="500000" min="0" max="10000000" placeholder="Первоначальный взнос" id="payment">
+                            <img class="ruble" src="img/ruble.svg">
+                        </div>
+                        <input class="range" type="range" value="25" min="0" max="100">
+                        <div class="input__button">
+                            <input class="buttonPercent" type="button" value="0%">
+                            <input class="buttonPercent" type="button" value="10%">
+                            <input class="buttonPercent" type="button" value="15%">
+                            <input class="buttonPercent" type="button" value="20%">
+                            <input class="buttonPercent" type="button" value="25%">
+                            <input class="buttonPercent" type="button" value="30%">
+                        </div>
+                        
+                    </div>
+                    <div class="form__group">
+                        <label for="creditTerm">Срок кредита</label>
+                        <div class="inputBackground">
+                            <input class="number" type="number" value="20" min="5" max="30" placeholder="Срок кредита" id="creditTerm">
+                            <p>Лет</p>
+                        </div>
+                        <input class="range" type="range" value="20" min="5" max="30">
+                        <div class="input__button">
+                            <input class="buttonPercent" type="button" value="5 лет">
+                            <input class="buttonPercent" type="button" value="10 лет">
+                            <input class="buttonPercent" type="button" value="15 лет">
+                            <input class="buttonPercent" type="button" value="20 лет">
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label for="percent">Процентная ставка</label>
+                        <div class="inputBackground">
+                            <input class="number" type="number" value="7.3" min="0.1" max="50" placeholder="Процентная ставка" id="percent">
+                            <p>%</p>
+                        </div>
+                        <input class="range" type="range" value="7.3" min="0.1" max="50">
+                        <div class="input__button">
+                            <input class="buttonPercent" type="button" value="0,1%">
+                            <input class="buttonPercent" type="button" value="4,5%">
+                            <input class="buttonPercent" type="button" value="6%">
+                            <input class="buttonPercent" type="button" value="7%">
+                            <input class="buttonPercent" type="button" value="7,5%">
+                            <input class="buttonPercent" type="button" value="9,1%">
+                            <input class="buttonPercent" type="button" value="10%">
+                        </div>
+                    </div>
+
+                </form>
+                <div class="form-right">
+                    <div class="calcResult">
+                        <h2 >19835</h2>
+                        <img class="ruble26" src="img/ruble26.svg">
+                        <div class="payment">
+                            Ваш ежемесячный платеж
+                        </div>    
+                        <img class="download" src="img/download.svg">
+                    </div>
+                    <ul class="list">
+                        <li>
+                          <span class="text">Кредит</span>
+                          <span class="num">2 500 000</span>
+                        </li>
+                        <li>
+                          <span class="text">Проценты</span>
+                          <span class="num">2 260 450</span>
+                        </li>
+                        <li>
+                          <span class="text">Проценты + кредит</span>
+                          <span class="num">4 760 450</span>
+                        </li>
+                        <li>
+                            <span class="text">Необходимый доход</span>
+                            <span class="num">33 059</span>
+                        </li>
+                    </ul>
+                    <button>Вывести график платежей
+                    </button>
+                </div>
+            </div>   
+            <div class="form__submit">
+                <button class="submit">Подать заявку онлайн</button>
+                <button class="email">Переслать себе на E-mail</button>
+            </div>
+        </div>
+    </section>
+    <section class="chart">
+        
+        <div class="container">
+            <div class="item item_1">Номер платежа</div>
+            <div class="item item_2">Дата платежа</div>
+            <div class="item item_3">Остаток долга</div>
+            <div class="item item_4">В погашение долга</div>
+            <div class="item item_5">В погашение процентов</div>
+            <div class="item item_6">Платеж</div>
+            <div class="item item_7">7</div>
+            <div class="item item_8">8</div>
+            <div class="item item_9">9</div>
+            <div class="item item_10">10</div>
+            <div class="item item_11">11</div>
+            <div class="item item_12">12</div>
+            <div class="item item_13">13</div>
+            <div class="item item_14">14</div>
+            <div class="item item_15">15</div>
+            <div class="item item_16">16</div>
+            <div class="item item_17">17</div>
+            <div class="item item_18">18</div>
+            <div class="item item_19">19</div>
+            <div class="item item_20">20</div>
+            <div class="item item_21">21</div>
+            <div class="item item_22">22</div>
+            <div class="item item_23">23</div>
+            <div class="item item_24">24</div>
+            <div class="item item_25">25</div>
+            <div class="item item_26">26</div>
+            <div class="item item_27">27</div>
+            <div class="item item_28">28</div>
+            <div class="item item_29">29</div>
+            <div class="item item_30">30</div>
+            <div class="item item_31">31</div>
+            <div class="item item_32">32</div>
+            <div class="item item_33">33</div>
+            <div class="item item_34">34</div>
+            <div class="item item_35">35</div>
+            <div class="item item_36">36</div>
+            <div class="item item_37">37</div>
+            <div class="item item_38">38</div>
+            <div class="item item_39">39</div>
+            <div class="item item_40">40</div>
+            <div class="item item_41">41</div>
+            <div class="item item_42">42</div>
+            <div class="item item_43">43</div>
+            <div class="item item_44">44</div>
+            <div class="item item_45">45</div>
+            <div class="item item_46">46</div>
+            <div class="item item_47">47</div>
+            <div class="item item_48">48</div>
+            <div class="item item_49">49</div>
+            <div class="item item_50">50</div>
+            <div class="item item_51">51</div>
+            <div class="item item_52">52</div>
+            <div class="item item_53">53</div>
+            <div class="item item_54">54</div>
+            <div class="item item_55">55</div>
+            <div class="item item_56">56</div>
+            <div class="item item_57">57</div>
+            <div class="item item_58">58</div>
+            <div class="item item_59">59</div>
+            <div class="item item_60">60</div>
+            <div class="item item_61">61</div>
+            <div class="item item_62">62</div>
+            <div class="item item_63">63</div>
+            <div class="item item_64">64</div>
+            <div class="item item_65">65</div>
+            <div class="item item_66">66</div>
+            <div class="item item_67">67</div>
+            <div class="item item_68">68</div>
+            <div class="item item_69">69</div>
+            <div class="item item_70">70</div>
+            <div class="item item_71">71</div>
+            <div class="item item_72">72</div>
+            <div class="item item_73">73</div>
+            <div class="item item_74">74</div>
+            <div class="item item_75">75</div>
+            <div class="item item_76">76</div>
+            <div class="item item_77">77</div>
+            <div class="item item_78">78</div>
+            <div class="item item_79">ВСЕГО</div>
+            <div class="item item_80">80</div>
+            <div class="item item_81">81</div>
+            <div class="item item_82">82</div>
+            
+        </div>
+    </section>
+</body>
+<footer>
+    <div class="footer-top"> 
+        <div class="footer__container">
+            <nav class="footer__nav">
+                <ul class="footer-menu">
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Преимущества</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Пресс-центр</a></li>
+                    <li><a href="#">Видео</a></li>
+                    <li><a href="#">Фото-галерея</a></li>
+                    <li><a href="#">Для клиентов</a></li>
+                </ul>
+            </nav>
+            <div class="footer__links">
+                <a href="#"><img src="img/links/vk.svg"></a>
+                <a href="#"><img src="img/links/facebook.svg"></a>
+                <a href="#"><img src="img/links/instagram.svg"></a>
+                <a href="#"><img src="img/links/telegram.svg"></a>
+                <a href="#"><img src="img/links/youtube.svg"></a>
+                <a href="#"><img src="img/links/viber.svg"></a>
+                <a href="#"><img src="img/links/whatsapp.svg"></a>
+            </div>
+        
+
+        </div>
+        <div class="footer__link">
+            <div class="tel">
+                <img src="img/links/telephone.svg"">
+                <a href="#">+7 (963) 501-00-11</a>
+                <p>Заказать звонок</p>
+            </div>
+            <div class="mail">
+                <h4><img src="img/links/email.svg">p.v.plotnikovl@nskl.etagi.com</h4>
+            </div>
+            <div class="adress">
+                <h4><img src="img/links/location-pin.svg">г.Новосибирск ул.Ядринцевская 53/1</h4>
+
+            </div>
+
+        </div>
+    </div>
+    <hr align="center" width="100%" size="1" color="#DCDCDC"/>
+    <div class="footer-bottom">
+        <div class="footer__copyright"> © 2023
+        </div>
+        <div class="privacy">
+            Политика конфиденциальности
+        </div>
+        <div class="map">Карта сайта</div>
+        <div class="x10"><img src="img/links/b7lstgbhn6hkufrp41uumxm2322ceinp.svg"></div>
+    </div>
+  </footer>
+</html>
